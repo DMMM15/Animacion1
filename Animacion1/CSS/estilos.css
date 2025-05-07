@@ -1,0 +1,55 @@
+body {
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  h1, h2 {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .char {
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  .word {
+    animation: fadeInScale 0.6s ease-in-out forwards;
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInScale {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .card {
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .btn-custom {
+    background-color: #ff7e5f;
+    border: none;
+  }
+
+  .btn-custom:hover {
+    background-color: #feb47b;
+  }
